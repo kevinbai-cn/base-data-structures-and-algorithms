@@ -9,7 +9,7 @@ DIRGUARD = @mkdir -p $(@D)
 test: $(INCDIR)/$(ODIR)/catch.o $(ODIR)/test.o
 	$(CC) $^ -o $@ $(CFLAGS)
 
-$(INCDIR)/$(ODIR)/catch.o: $(INCDIR)/catch.cpp
+$(INCDIR)/$(ODIR)/catch.o: $(INCDIR)/catch.cc
 	$(DIRGUARD)
 	$(CC) -c $< -o $@ $(CFLAGS)
 
