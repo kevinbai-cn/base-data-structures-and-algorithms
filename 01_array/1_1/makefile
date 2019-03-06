@@ -13,7 +13,7 @@ $(INCDIR)/$(ODIR)/catch.o: $(INCDIR)/catch.cpp
 	$(DIRGUARD)
 	$(CC) -c $< -o $@ $(CFLAGS)
 
-$(ODIR)/%.o: %.cpp
+$(ODIR)/%.o: %.cc
 	$(DIRGUARD)
 	$(CC) -c $< -o $@ $(CFLAGS)
 
