@@ -1,6 +1,8 @@
-#include "catch.hpp"
 #include "array.h"
+
 #include <stdexcept>
+
+#include "catch.hpp"
 
 TEST_CASE("Test add") {
   const unsigned int capacity = 4;
